@@ -1,0 +1,24 @@
+step 1 : install packages 
+-> pip install -r requirements.txt (where the requirements.txt file is located)
+
+step 2 : migrate db (one time)
+-> python manage.py migrate 
+( where the manage.py file is located)
+
+step 3: create super user
+-> python manage.py createsuperuser
+username , email , password
+
+step 4 : set env variable
+goole how to set
+to bypass go to student/view.py on line 17 to 20
+
+step 5 : run server 
+-> python manage.py runserver
+
+end points(Students)
+1: GET / http://localhost:8000/student/login -- (login_url)
+1: POST / http://localhost:8000/student/login -- (access_code)
+
+end points(Department)
+1: GET / http://localhost:8000/
